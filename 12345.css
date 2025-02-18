@@ -107,8 +107,8 @@
   }
 
   .u-section-1 .u-image-1 {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     background-size:50% auto;
     background-repeat: no-repeat;
   }
