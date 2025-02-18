@@ -8452,7 +8452,7 @@ section.u-image,
 .u-valign-middle > *,
 .u-valign-top > *,
 .u-valign-bottom > * {
-  flex-shrink: 0;
+  /* flex-shrink: 0; EDIT*/
 }
 .u-valign-middle {
   justify-content: center;
