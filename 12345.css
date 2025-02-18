@@ -1,0 +1,88 @@
+.u-section-1 {
+  background-image: none;
+  background-color: #5f8fcb;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 809px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  min-height: 111px;
+  height: auto;
+  margin: 60px 410px 0;
+}
+
+.u-section-1 .u-image-1 {
+  width: 720px;
+  height: 360px;
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  margin: auto auto auto auto;
+}
+
+/*  .u-section-1 .u-image-1 {
+  width: 173px;
+  height: 173px;
+  background-image: url("images/ezgif.com-gif-maker2.gif");
+  background-position: 50% 50%;
+  margin: 16px auto 60px 484px;
+} */
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 570px;
+    margin-right: 10px; /*157px*/
+    margin-left: 10px; /*213px*/
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-custom-html-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-size:80% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 540px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: auto;
+    margin-right: auto;
+    background-size:65% auto;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-image-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-size:50% auto;
+    background-repeat: no-repeat;
+  }
+}
