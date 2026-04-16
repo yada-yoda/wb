@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://waiterboys.com/</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+
+    <image:image>
+      <image:loc>https://waiterboys.com/images/logo.png</image:loc>
+      <image:title>Waiter Boys — Official Logo</image:title>
+      <image:caption>Waiter Boys 2025 short film logo</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://waiterboys.com/images/cstamps_3.png</image:loc>
+      <image:title>Waiter Boys — Production Companies</image:title>
+      <image:caption>Rizzo Productions and SkyK Film Productions</image:caption>
+    </image:image>
+
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/zS43lgYXDrA/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Waiter Boys (2025) — Award-Winning Short Comedy Film</video:title>
+      <video:description>Reports of a strange orange syrup-like substance are appearing all around the city. Emerging from the background of past events, these underdog FBI agents are forced to go undercover — again. Winner of 4 international film festival awards.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=zS43lgYXDrA</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/zS43lgYXDrA</video:player_loc>
+      <video:duration>960</video:duration>
+      <video:publication_date>2025-04-12T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:live>no</video:live>
+      <video:tag>short film</video:tag>
+      <video:tag>comedy</video:tag>
+      <video:tag>Chicago</video:tag>
+      <video:tag>FBI</video:tag>
+      <video:tag>independent film</video:tag>
+      <video:tag>Waiter Boys</video:tag>
+      <video:category>Comedy</video:category>
+      <video:uploader info="https://www.youtube.com/">Rizzo Productions</video:uploader>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>https://waiterboys.com/promo/11x17_wb.pdf</loc>
+    <lastmod>2025-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://waiterboys.com/promo/85x11_wb.pdf</loc>
+    <lastmod>2025-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://waiterboys.com/promo/4upflyer_wb.pdf</loc>
+    <lastmod>2025-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
