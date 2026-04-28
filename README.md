@@ -33,6 +33,23 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.2 — 2026-04-28
+- **Added standalone `VideoObject` JSON-LD for the full short film.**
+  The trailer was already nested inside the Movie schema, but a
+  top-level VideoObject is what triggers Google's video rich results
+  (thumbnail, duration, watch action right in the SERP). Includes
+  contentUrl, embedUrl, both YouTube thumbnail sizes, and a
+  `WatchAction` so AI assistants know where to send viewers.
+- **Added standalone `Person` JSON-LD for Skylar Kendall and Frank
+  Rizzo.** They were nested as director/writer/producer/actor inside
+  the Movie schema; as standalone Person entities with `sameAs` IMDb
+  links and `worksFor` production companies, they help search engines
+  build knowledge-panel entries for the creators independently of the
+  film page.
+- Skipped FAQ schema — Google deprecated FAQ rich results for non-
+  authoritative sites in August 2023, so the SEO upside is gone for
+  a film site.
+
 ### v1.0.1 — 2026-04-27
 - **Made the site LLM-friendly so it can actually surface in AI answer
   engines.** The previous robots.txt explicitly blocked GPTBot, CCBot,
