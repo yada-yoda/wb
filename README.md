@@ -17,6 +17,7 @@ trailer_bg.mp4    hero background video
 sitemap.xml       lists site URLs + video/image entries for Google
 robots.txt        allows search crawlers, blocks AI training bots
 CNAME             custom domain pointer
+llms.txt          Markdown-formatted summary for AI/LLM consumption
 favicon/          full favicon set + web manifest
 images/           logo, OG share image (wbog.png), character stamps,
                   promo art (11x17, 8.5x11, 4-up)
@@ -31,6 +32,19 @@ name="version">` tag near the top of the file; bump it any time you ship
 a visible change and add a matching entry to the changelog below.
 
 ## Changelog
+
+### v1.0.1 — 2026-04-27
+- **Made the site LLM-friendly so it can actually surface in AI answer
+  engines.** The previous robots.txt explicitly blocked GPTBot, CCBot,
+  anthropic-ai, Claude-Web, and Google-Extended — which protected the
+  content from training scrapes but also prevented Perplexity, ChatGPT
+  search, Google AI Overviews, and Claude with web search from citing
+  the film. For a marketing site whose whole job is to drive viewers
+  to the YouTube release, that tradeoff was upside down. Removed the
+  blocks; all bots are welcome.
+- Added `llms.txt` at the root: a clean Markdown-formatted summary
+  with the synopsis, facts, full cast and roles, awards, trivia, and
+  watch links. LLMs prefer this over scraping a styled HTML page.
 
 ### v1.0.0 — 2026-04-27
 - First tagged release. Cleaned up the repo so it's readable from a
