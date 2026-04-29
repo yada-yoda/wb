@@ -33,6 +33,22 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.3 — 2026-04-28
+- **Fixed two SEO errors flagged by Bing Webmaster Tools** during the
+  initial Bing crawl after sitemap submission:
+  - **H1 tag missing.** The page had three H2s but no H1, so search
+    engines had no anchor for the page's primary topic. Promoted the
+    `<div class="logo-wrap">` in the hero to an `<h1>` so the existing
+    logo image now sits semantically as the page title. Added a
+    visually-hidden `<span>` inside the H1 with the full text
+    "Waiter Boys (2025) — Award-Winning Short Comedy Film" so screen
+    readers and search engines get strong text content (the visible
+    layout is unchanged).
+  - **Meta description too long.** Was 251 characters, well past
+    Google/Bing's ~155-character SERP truncation point. Trimmed to 152
+    chars while keeping the brand keyword first, the hook, and the
+    call-to-action.
+
 ### v1.0.2 — 2026-04-28
 - **Added standalone `VideoObject` JSON-LD for the full short film.**
   The trailer was already nested inside the Movie schema, but a
