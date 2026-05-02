@@ -1,0 +1,41 @@
+/* TEAM */
+
+Director, writer, producer:    Skylar Kendall
+Writer, producer:              Frank Rizzo
+Production:                    Rizzo Productions, SkyK Film Productions
+Site:                          https://waiterboys.com/
+
+/* CAST */
+
+Frank Rizzo            as Randy
+Ricky J. Zumot         as Steve Dar
+Leonidas Wilkinson     as Mickey
+Skylar Kendall         as James
+Ben Tengowski          as Rodger
+RJ Smith               as Tom
+Lorenzo Parenza        as Gabe
+Brandon Layne          as Bobby
+Tré Walker             as Vic
+Phan Le                as Ali
+Arlecia Stapleton      as Tina
+Shelby Henderson       as Mandy
+
+/* AWARDS */
+
+Paris Film Awards 2025          — May Award, Best Comedy
+London Movie Awards 2025        — May Award, Best Actress (Shelby Henderson)
+Best Shorts Competition 2025    — Award of Recognition, Ensemble Cast
+Florence Film Awards 2025       — Silver Award, Best Comedy
+
+/* SITE */
+
+Last update:                   2026-04-28
+Standards:                     HTML5, CSS3, vanilla JS
+Hosting:                       GitHub Pages
+Repository:                    https://github.com/yada-yoda/wb
+Source-of-truth version:       see <meta name="version"> in index.html
+
+/* THANKS */
+
+Almost the entire cast either met on the set of Deli Boys or through
+Second City Chicago. The film was produced on a budget of about $500.

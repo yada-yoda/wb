@@ -18,9 +18,10 @@ sitemap.xml       lists site URLs + video/image entries for Google
 robots.txt        allows search crawlers, blocks AI training bots
 CNAME             custom domain pointer
 llms.txt          Markdown-formatted summary for AI/LLM consumption
+humans.txt        team / cast / awards credits in the humans.txt format
 favicon/          full favicon set + web manifest
-images/           logo, OG share image (wbog.png), character stamps,
-                  promo art (11x17, 8.5x11, 4-up)
+images/           logo, OG share image (wbog.png), trailer poster,
+                  character stamps, promo art (11x17, 8.5x11, 4-up)
 promo/            downloadable promo PDFs + a small landing page
 ```
 
@@ -32,6 +33,38 @@ name="version">` tag near the top of the file; bump it any time you ship
 a visible change and add a matching entry to the changelog below.
 
 ## Changelog
+
+### v1.0.4 — 2026-04-28
+- **New distribution destination: Relay.** Added Relay
+  (`pickrelay.com/t/yrfk-bm3y/waiter-boys`) as a third hero CTA button
+  next to YouTube and IMDb, in the footer social row, in the Movie
+  schema's `sameAs` array, and in `llms.txt`. Now the page presents
+  both a free (YouTube) and a paid-distribution (Relay) watch path.
+- **New social channel: TikTok** (`@waiterboysfilm`). Added to the
+  footer social row, JSON-LD `sameAs`, and `llms.txt`.
+- **Social share buttons** in the SPREAD THE WORD section: X,
+  Facebook, Reddit, and Copy Link. Styled to match the existing palette
+  (charcoal/cream/pink); copy-link button gives a "COPIED!" flash via
+  the gold accent color.
+- **GA4 conversion tracking** for outbound links. Two new events fire:
+  - `watch_click` (named source: `youtube` or `relay`) — the only
+    metric that matters for measuring whether visitors actually go
+    watch the film
+  - `click_outbound` — generic outbound link tracking for everything
+    else (social channels, IMDb, Letterboxd, etc.)
+  - `share` (method: `copy_link`) when someone uses the copy-link button
+- **Trailer background video performance.** Added `preload="metadata"`
+  so the browser only fetches the video header on first paint instead
+  of buffering the whole 4.4MB file, and a `poster="images/trailer-poster.jpg"`
+  (44KB JPEG, generated from the MP4) so users see a still frame
+  instantly while the video loads. Improves Largest Contentful Paint
+  (a Google Core Web Vitals signal) and burns a lot less mobile data.
+- **Image alt-text upgrade.** The hero logo's alt was just `"Waiter
+  Boys"`; promoted to `"Waiter Boys (2025) — short comedy film logo"`
+  for richer screen-reader and search-engine context.
+- **`humans.txt`** at the root: team, cast, awards, and site
+  credits in the standard humanstxt.org format. Small touch — no SEO
+  benefit but a nice signal that humans built this.
 
 ### v1.0.3 — 2026-04-28
 - **Fixed two SEO errors flagged by Bing Webmaster Tools** during the
