@@ -34,6 +34,26 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.5 — 2026-04-28
+- **Trivia copy break.** Added a paragraph break between the two
+  trivia facts in the DID YOU KNOW section so the cast/Second City
+  fact and the $500 budget fact read as separate beats instead of one
+  run-on sentence.
+- **Fixed broken favicon.** The cookie-themed favicon files were
+  always in the repo at `favicon/`, but the `<link>` tags in
+  `index.html` pointed to root paths (`/favicon.ico`,
+  `/apple-touch-icon.png`) which 404'd on the live site — meaning the
+  browser tab has been showing the default GitHub Pages icon instead
+  of the cookie this whole time. Updated all five favicon link tags
+  to point to `/favicon/...`, added the missing 16x16 / 32x32 PNG
+  variants, and added the missing `<link rel="manifest">` reference.
+- **Fixed `site.webmanifest`.** Same wrong-paths bug
+  (`/android-chrome-...png` → `/favicon/android-chrome-...png`), plus
+  it had empty `name` / `short_name` and white `theme_color` /
+  `background_color`. Now populated with "Waiter Boys" name and the
+  site's `#0C0B0F` charcoal background, so PWA install prompts and
+  Chrome's address bar style match the site.
+
 ### v1.0.4 — 2026-04-28
 - **New distribution destination: Relay.** Added Relay
   (`pickrelay.com/t/yrfk-bm3y/waiter-boys`) as a third hero CTA button
