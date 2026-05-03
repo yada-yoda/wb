@@ -34,6 +34,17 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.6 — 2026-04-28
+- **Trivia layout fix.** The first sentence in DID YOU KNOW was
+  wrapping mid-sentence with "Second City." orphaned on its own line.
+  Bumped the trivia paragraph's max-width from 560px to 680px so the
+  whole first sentence fits on one line at desktop widths, added a
+  non-breaking space between "Second" and "City" so they always stay
+  together as a unit, and applied `text-wrap: pretty` for nicer line
+  distribution generally. Also tightened the inter-sentence gap from
+  `<br><br>` (blank line) to `<br>` (single line break) so the two
+  facts feel like related beats instead of paragraphs.
+
 ### v1.0.5 — 2026-04-28
 - **Trivia copy break.** Added a paragraph break between the two
   trivia facts in the DID YOU KNOW section so the cast/Second City
