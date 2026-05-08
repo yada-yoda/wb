@@ -34,6 +34,28 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.8 — 2026-04-28
+- **Performance pass round 2**, driven by real PageSpeed Insights data
+  on the live site. Mobile score was 75 (LCP 4.6s, FCP 3.5s) with the
+  two biggest opportunities being render-blocking fonts and a heavy
+  hero video. Both now fixed:
+  - **Async Google Fonts.** The fonts.googleapis.com stylesheet was
+    render-blocking with a 254ms critical-path latency that PSI
+    estimated at 2,280ms savings on mobile. Switched to the standard
+    `<link rel="preload" as="style">` + `<link rel="stylesheet"
+    media="print" onload="this.media='all'">` + `<noscript>` fallback
+    pattern. Browser now fetches the font CSS without blocking initial
+    render; styles apply once loaded. Text falls back to system fonts
+    until then (per `display=swap`), but FCP/LCP no longer wait.
+  - **Trailer video re-encode.** Original `trailer_bg.mp4` was 4.42 MB
+    at 1280x720, 631 kbps video + 130 kbps audio (which was wasted —
+    the `<video>` element is `muted`). Re-encoded to 854x480, 306 kbps
+    video, audio stripped (`-an`), `+faststart` for streaming.
+    **4.42 MB → 1.78 MB (60% smaller)** with no perceptible quality
+    loss given the heavy radial-gradient + linear-gradient overlay
+    on top of the video. Existing 44 KB poster JPG continues to display
+    at the right 16:9 aspect ratio.
+
 ### v1.0.7 — 2026-04-28
 - **Performance pass.** Five surgical fixes targeting the metrics
   PageSpeed Insights cares about (LCP, CLS, FCP):
