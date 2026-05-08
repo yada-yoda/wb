@@ -34,6 +34,30 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.7 — 2026-04-28
+- **Performance pass.** Five surgical fixes targeting the metrics
+  PageSpeed Insights cares about (LCP, CLS, FCP):
+  - Added `<link rel="preconnect">` for `fonts.googleapis.com` and
+    `fonts.gstatic.com` so the browser opens connections to the font
+    CDN in parallel with HTML parsing instead of waiting until it
+    encounters the `<link rel="stylesheet">`. Saves ~150ms on first
+    font request — directly improves First Contentful Paint.
+  - Added `<link rel="dns-prefetch">` for `googletagmanager.com` as a
+    backup hint for the GA script.
+  - Added `<meta name="color-scheme" content="dark">` so browsers
+    paint the page background dark from the very first frame instead
+    of flashing white before the CSS applies. Eliminates a jarring
+    visual artifact that was both a UX issue and a Lighthouse note.
+  - Added `width="720" height="360"` to the hero logo and
+    `width="300" height="40"` to the character stamps so the browser
+    reserves the right amount of layout space before the images
+    decode. Eliminates Cumulative Layout Shift (CLS) from those
+    images and gives Lighthouse the aspect ratio it wants.
+  - Added `fetchpriority="high"` to the hero logo (it's the LCP
+    candidate) and `decoding="async"` to both inline images. The
+    browser now knows the logo is the most important asset to render
+    and can decode images off the main thread.
+
 ### v1.0.6 — 2026-04-28
 - **Trivia layout fix.** The first sentence in DID YOU KNOW was
   wrapping mid-sentence with "Second City." orphaned on its own line.
