@@ -37,6 +37,13 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.11 — 2026-08-13
+- **EPK "Watch the Film" page got a real backdrop** — the rainy
+  Clark/Division subway shot from the film's opening (pulled clean from
+  the master, no credit overlay) now sits behind the QR codes instead
+  of a flat dark background, with a gradient overlay keeping the text
+  readable.
+
 ### v1.0.10 — 2026-08-13
 - **EPK renamed to `waiter-boys-epk.pdf`** (was `epk_wb.pdf`) so the
   file identifies itself when it lands in someone's Downloads folder.

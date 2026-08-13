@@ -9,6 +9,10 @@
 
   Pages are 960x540 (16:9). Fonts load from Google Fonts (needs network).
   Logo/stamps come from ../../images/; everything else lives beside this file.
+
+  NOTE: when this folder lives on a network drive, Edge may render a stale
+  cached copy after edits. If output doesn't match your changes, copy the
+  folder to a local disk and render from there.
 -->
 <html lang="en">
 <head>
@@ -401,7 +405,8 @@
 
 <!-- ═════════ PAGE 12 · WHERE TO WATCH ═════════ -->
 <div class="page watch-page">
-  <svg class="splat" style="top:-70px; right:-70px; width:280px; opacity:0.85" viewBox="0 0 220 200"><use href="#splatB"/></svg>
+  <img class="still" src="bg_watch.jpg" alt="">
+  <div class="overlay" style="background:linear-gradient(90deg, rgba(10,10,12,0.82) 0%, rgba(10,10,12,0.58) 45%, rgba(10,10,12,0.70) 100%)"></div>
   <div class="watch-inner">
     <div class="label" style="color:#fff"><span class="bar"></span><span style="color:#fff">WATCH THE FILM</span></div>
     <div class="qr-row">
