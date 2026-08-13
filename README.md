@@ -23,7 +23,9 @@ favicon/          full favicon set + web manifest
 images/           logo, OG share image (wbog.png), trailer poster,
                   character stamps, promo art (11x17, 8.5x11, 4-up)
 promo/            downloadable promo PDFs (posters, flyers, EPK) + a
-                  small landing page
+                  small landing page; epk-src/ holds the EPK's HTML
+                  source + assets (regeneration steps in a comment at
+                  the top of wb_epk.html)
 ```
 
 ## Editing
@@ -34,6 +36,14 @@ name="version">` tag near the top of the file; bump it any time you ship
 a visible change and add a matching entry to the changelog below.
 
 ## Changelog
+
+### v1.0.10 — 2026-08-13
+- **EPK renamed to `waiter-boys-epk.pdf`** (was `epk_wb.pdf`) so the
+  file identifies itself when it lands in someone's Downloads folder.
+- **EPK source checked in** under `promo/epk-src/` — the HTML layout
+  and its image assets, with regeneration instructions in a comment at
+  the top. Future edits (new awards, new stills) no longer require
+  rebuilding the design from scratch.
 
 ### v1.0.9 — 2026-08-13
 - **Press kit.** The film now has a proper 13-page electronic press kit
