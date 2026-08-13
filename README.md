@@ -22,7 +22,8 @@ humans.txt        team / cast / awards credits in the humans.txt format
 favicon/          full favicon set + web manifest
 images/           logo, OG share image (wbog.png), trailer poster,
                   character stamps, promo art (11x17, 8.5x11, 4-up)
-promo/            downloadable promo PDFs + a small landing page
+promo/            downloadable promo PDFs (posters, flyers, EPK) + a
+                  small landing page
 ```
 
 ## Editing
@@ -33,6 +34,15 @@ name="version">` tag near the top of the file; bump it any time you ship
 a visible change and add a matching entry to the changelog below.
 
 ## Changelog
+
+### v1.0.9 — 2026-08-13
+- **Press kit.** The film now has a proper 13-page electronic press kit
+  (`promo/epk_wb.pdf`) — synopsis, stills, artistic statement, cast,
+  awards, credits, and contact info, modeled on the EPKs festivals and
+  press actually ask for. A new "Press Kit" section on the site offers
+  the download alongside a press contact address (waiterboys@rizzo.cc),
+  so journalists and programmers no longer have to piece the film's
+  story together from the site. Also linked from `llms.txt`.
 
 ### v1.0.8 — 2026-04-28
 - **Performance pass round 2**, driven by real PageSpeed Insights data
