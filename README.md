@@ -37,6 +37,13 @@ a visible change and add a matching entry to the changelog below.
 
 ## Changelog
 
+### v1.0.12 — 2026-08-13
+- **Press Kit section backdrop.** The same Clark/Division subway frame
+  used inside the EPK now sits behind the site's Press Kit section
+  (dark overlay on top for readability), visually tying the section to
+  the kit it offers. Reuses the already-hosted `promo/epk-src/bg_watch.jpg`
+  — no new asset weight.
+
 ### v1.0.11 — 2026-08-13
 - **EPK "Watch the Film" page got a real backdrop** — the rainy
   Clark/Division subway shot from the film's opening (pulled clean from
